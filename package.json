@@ -1,0 +1,29 @@
+{
+  "name": "fuzz-fleet",
+  "version": "1.0.0",
+  "description": "MCP server for distributed fuzzing — crash triage, stats, remote execution, and an MCP bridge for querying tools on remote servers over SSH",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "fuzz-fleet": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": ["mcp", "fuzzing", "libfuzzer", "libafl", "crash-triage", "model-context-protocol", "fuzz-fleet"],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
